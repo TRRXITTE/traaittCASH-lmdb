@@ -88,13 +88,13 @@ const uint64_t MINIMUM_FEE                                   = UINT64_C(100);
 
 /* This section defines our minimum and maximum mixin counts required for transactions */
 const uint64_t MINIMUM_MIXIN_V1                              = 0;
-const uint64_t MAXIMUM_MIXIN_V1                              = 100;
+const uint64_t MAXIMUM_MIXIN_V1                              = 5;
 
 const uint64_t MINIMUM_MIXIN_V2                              = 0;
-const uint64_t MAXIMUM_MIXIN_V2                              = 10;
+const uint64_t MAXIMUM_MIXIN_V2                              = 8;
 
 const uint64_t MINIMUM_MIXIN_V3                              = 0;
-const uint64_t MAXIMUM_MIXIN_V3                              = 15;
+const uint64_t MAXIMUM_MIXIN_V3                              = 10;
 
 /* The heights to activate the mixin limits at */
 const uint32_t MIXIN_LIMITS_V1_HEIGHT                        = 1000000;
@@ -197,7 +197,7 @@ const char     P2P_NET_DATA_FILENAME[]                       = "p2pstate.bin";
 const char     MINER_CONFIG_FILE_NAME[]                      = "minerconf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "traaitt";
+const char     CRYPTONOTE_NAME[]                             = "traaittCASH";
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
