@@ -1,0 +1,416 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The system is: Darwin - 21.6.0 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/local/opt/llvm@8/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/3.26.4/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/local/opt/llvm@8/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/3.26.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY"
+      binary: "/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY
+        
+        Run Build Command(s):/usr/local/Cellar/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_ace4a/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_ace4a.dir/build.make CMakeFiles/cmTC_ace4a.dir/build
+        gmake[1]: Entering directory '/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY'
+        Building C object CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o
+        /usr/local/opt/llvm@8/bin/clang   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCCompilerABI.c
+        clang version 8.0.1 (tags/RELEASE_801/final)
+        Target: x86_64-apple-darwin21.6.0
+        Thread model: posix
+        InstalledDir: /usr/local/opt/llvm@8/bin
+        clang-8: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/usr/local/Cellar/llvm@8/8.0.1_5/bin/clang-8" -cc1 -triple x86_64-apple-macosx10.17.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-sdk-version=12.3 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 764 -v -coverage-notes-file /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY/CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1 -dependency-file CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o.d -sys-header-deps -MT CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -fdebug-compilation-dir /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.17.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 8.0.1 based upon LLVM 8.0.1 default target x86_64-apple-darwin21.6.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_ace4a
+        /usr/local/Cellar/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ace4a.dir/link.txt --verbose=1
+        /usr/local/opt/llvm@8/bin/clang  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -o cmTC_ace4a 
+        clang version 8.0.1 (tags/RELEASE_801/final)
+        Target: x86_64-apple-darwin21.6.0
+        Thread model: posix
+        InstalledDir: /usr/local/opt/llvm@8/bin
+         "/usr/bin/ld" -demangle -lto_library /usr/local/Cellar/llvm@8/8.0.1_5/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.17.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk -o cmTC_ace4a -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -lSystem /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:ld64-764
+        BUILD 11:22:50 Apr 28 2022
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        Library search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/
+        gmake[1]: Leaving directory '/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include] ==> [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+        implicit include dirs: [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/local/Cellar/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_ace4a/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_ace4a.dir/build.make CMakeFiles/cmTC_ace4a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY']
+        ignore line: [Building C object CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/local/opt/llvm@8/bin/clang   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 8.0.1 (tags/RELEASE_801/final)]
+        ignore line: [Target: x86_64-apple-darwin21.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/local/opt/llvm@8/bin]
+        ignore line: [clang-8: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/usr/local/Cellar/llvm@8/8.0.1_5/bin/clang-8" -cc1 -triple x86_64-apple-macosx10.17.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-sdk-version=12.3 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 764 -v -coverage-notes-file /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY/CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1 -dependency-file CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o.d -sys-header-deps -MT CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -fdebug-compilation-dir /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-8g1nsY -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.17.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 8.0.1 based upon LLVM 8.0.1 default target x86_64-apple-darwin21.6.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_ace4a]
+        ignore line: [/usr/local/Cellar/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ace4a.dir/link.txt --verbose=1]
+        ignore line: [/usr/local/opt/llvm@8/bin/clang  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -o cmTC_ace4a ]
+        ignore line: [clang version 8.0.1 (tags/RELEASE_801/final)]
+        ignore line: [Target: x86_64-apple-darwin21.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/local/opt/llvm@8/bin]
+        link line: [ "/usr/bin/ld" -demangle -lto_library /usr/local/Cellar/llvm@8/8.0.1_5/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.17.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk -o cmTC_ace4a -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o -lSystem /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/usr/local/Cellar/llvm@8/8.0.1_5/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [x86_64] ==> ignore
+          arg [-macosx_version_min] ==> ignore
+          arg [10.17.0] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_ace4a] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_ace4a.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a] ==> lib [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a]
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/]
+        remove lib [System]
+        remove lib [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp"
+      binary: "/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp
+        
+        Run Build Command(s):/usr/local/Cellar/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_e5644/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_e5644.dir/build.make CMakeFiles/cmTC_e5644.dir/build
+        gmake[1]: Entering directory '/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp'
+        Building CXX object CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/local/opt/llvm@8/bin/clang++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 8.0.1 (tags/RELEASE_801/final)
+        Target: x86_64-apple-darwin21.6.0
+        Thread model: posix
+        InstalledDir: /usr/local/opt/llvm@8/bin
+        clang-8: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/usr/local/Cellar/llvm@8/8.0.1_5/bin/clang-8" -cc1 -triple x86_64-apple-macosx10.17.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-sdk-version=12.3 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 764 -v -coverage-notes-file /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp/CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1 -dependency-file CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o.d -sys-header-deps -MT CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /usr/local/opt/llvm@8/bin/../include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.17.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 8.0.1 based upon LLVM 8.0.1 default target x86_64-apple-darwin21.6.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/opt/llvm@8/bin/../include/c++/v1
+         /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_e5644
+        /usr/local/Cellar/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5644.dir/link.txt --verbose=1
+        /usr/local/opt/llvm@8/bin/clang++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e5644 
+        clang version 8.0.1 (tags/RELEASE_801/final)
+        Target: x86_64-apple-darwin21.6.0
+        Thread model: posix
+        InstalledDir: /usr/local/opt/llvm@8/bin
+         "/usr/bin/ld" -demangle -lto_library /usr/local/Cellar/llvm@8/8.0.1_5/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.17.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk -o cmTC_e5644 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:ld64-764
+        BUILD 11:22:50 Apr 28 2022
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        Library search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/
+        gmake[1]: Leaving directory '/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/opt/llvm@8/bin/../include/c++/v1]
+          add: [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/opt/llvm@8/bin/../include/c++/v1] ==> [/usr/local/opt/llvm@8/include/c++/v1]
+        collapse include dir [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include] ==> [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+        implicit include dirs: [/usr/local/opt/llvm@8/include/c++/v1;/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/local/Cellar/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_e5644/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_e5644.dir/build.make CMakeFiles/cmTC_e5644.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/local/opt/llvm@8/bin/clang++   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 8.0.1 (tags/RELEASE_801/final)]
+        ignore line: [Target: x86_64-apple-darwin21.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/local/opt/llvm@8/bin]
+        ignore line: [clang-8: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/usr/local/Cellar/llvm@8/8.0.1_5/bin/clang-8" -cc1 -triple x86_64-apple-macosx10.17.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-sdk-version=12.3 -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 764 -v -coverage-notes-file /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp/CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1 -dependency-file CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o.d -sys-header-deps -MT CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -stdlib=libc++ -internal-isystem /usr/local/opt/llvm@8/bin/../include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -fdeprecated-macro -fdebug-compilation-dir /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-EqFKQp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.17.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 8.0.1 based upon LLVM 8.0.1 default target x86_64-apple-darwin21.6.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/opt/llvm@8/bin/../include/c++/v1]
+        ignore line: [ /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_e5644]
+        ignore line: [/usr/local/Cellar/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5644.dir/link.txt --verbose=1]
+        ignore line: [/usr/local/opt/llvm@8/bin/clang++  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e5644 ]
+        ignore line: [clang version 8.0.1 (tags/RELEASE_801/final)]
+        ignore line: [Target: x86_64-apple-darwin21.6.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/local/opt/llvm@8/bin]
+        link line: [ "/usr/bin/ld" -demangle -lto_library /usr/local/Cellar/llvm@8/8.0.1_5/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.17.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk -o cmTC_e5644 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/usr/local/Cellar/llvm@8/8.0.1_5/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [x86_64] ==> ignore
+          arg [-macosx_version_min] ==> ignore
+          arg [10.17.0] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e5644] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e5644.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a] ==> lib [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a]
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/]
+        remove lib [System]
+        remove lib [/usr/local/Cellar/llvm@8/8.0.1_5/lib/clang/8.0.1/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:36 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-WKngbd"
+      binary: "/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-WKngbd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-WKngbd
+        
+        Run Build Command(s):/usr/local/Cellar/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/local/bin/gmake -f Makefile cmTC_96698/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_96698.dir/build.make CMakeFiles/cmTC_96698.dir/build
+        gmake[1]: Entering directory '/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-WKngbd'
+        Building C object CMakeFiles/cmTC_96698.dir/src.c.o
+        /usr/local/opt/llvm@8/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -MD -MT CMakeFiles/cmTC_96698.dir/src.c.o -MF CMakeFiles/cmTC_96698.dir/src.c.o.d -o CMakeFiles/cmTC_96698.dir/src.c.o -c /Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-WKngbd/src.c
+        Linking C executable cmTC_96698
+        /usr/local/Cellar/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96698.dir/link.txt --verbose=1
+        /usr/local/opt/llvm@8/bin/clang  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_96698.dir/src.c.o -o cmTC_96698 
+        gmake[1]: Leaving directory '/Users/traaitt/Documents/GitHub/traaitt-lmdb/build/CMakeFiles/CMakeScratch/TryCompile-WKngbd'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:142 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      clang version 8.0.1 (tags/RELEASE_801/final)
+      Target: x86_64-apple-darwin21.6.0
+      Thread model: posix
+      InstalledDir: /usr/local/opt/llvm@8/bin
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1102 (message)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:142 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" matched "(clang version)":
+      clang version 8.0.1 (tags/RELEASE_801/final)
+      Target: x86_64-apple-darwin21.6.0
+      Thread model: posix
+      InstalledDir: /usr/local/opt/llvm@8/bin
+...
