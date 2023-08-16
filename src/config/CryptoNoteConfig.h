@@ -45,7 +45,7 @@ const unsigned EMISSION_SPEED_FACTOR                         = 25;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 /* Premine amount */
-const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(4100000000000000);
+const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(4100000000000);
 
 /* How to generate a premine:
 
@@ -58,7 +58,7 @@ const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(41000000
 --print-genesis-tx --genesis-block-reward-address <premine wallet address>
 
 For example:
-TurtleCoind --print-genesis-tx --genesis-block-reward-address TRTLv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW
+./XTCASHnetwork --print-genesis-tx --genesis-block-reward-address cashYXyYm73ieNQ9NhkEnyJZs4L6GDPH9NchZmUHHuoWEJfBgiv2WWRCod7tv3UvUN69GpCtfTKra5fzsca1JZ6F4j2De8RjX2
 
 * Take the hash printed, and replace it with the hash below in GENESIS_COINBASE_TX_HEX
 
